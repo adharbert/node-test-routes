@@ -7,8 +7,10 @@ const users = require('./routes/users');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// routes.js items
 routes(app);
 
+// users/js items
 app.use('/api/users', users);
 
 var server = app.listen(3000, function () {
